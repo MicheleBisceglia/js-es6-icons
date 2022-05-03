@@ -125,7 +125,7 @@ const iconsArray =[
 	}
 ];
 //Ciclo foarEach
-const nameArray = iconsArray.forEach((element) => {
+const newArray = iconsArray.forEach((element) => {
 //creo la card nell'hatml
 	const createDiv = document.createElement("div");
 //assegno la classe alla card creata
