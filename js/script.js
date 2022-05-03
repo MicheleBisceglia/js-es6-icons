@@ -131,5 +131,16 @@ iconsArray.forEach((element) => {
 
 
 
+	const nextname = iconsArray.map((element,index,) => {
+		 const aaa = element.name;
+		 return aaa
+		});
+	
+
+console.log(nextname);
+document.querySelector("span").innerHTML = nextname[0]
+
+
+
 
 
