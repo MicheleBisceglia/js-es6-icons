@@ -133,7 +133,7 @@ const newArray = iconsArray.forEach((element) => {
 //inserisco icona e nome nella card
 	createDiv.innerHTML = `
 		<div class="box">
-			<i class="${element.family} ${element.prefix}${element.name}"/i>
+			<i class="${element.family} ${element.prefix}${element.name}"  style="color: ${element.color}"/i>
             <div>
 				<span>${element.name}</span>
 			</div>
