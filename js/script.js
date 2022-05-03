@@ -124,23 +124,28 @@ const iconsArray =[
 		color: 'blue'
 	}
 ];
+//Ciclo foarEach
+const nameArray = iconsArray.forEach((element) => {
+//creo la card nell'hatml
+	const createDiv = document.createElement("div");
+//assegno la classe alla card creata
+	createDiv.classList.add("box-container");
+//inserisco icona e nome nella card
+	createDiv.innerHTML = `
+		<div class="box">
+			<i class="${element.family} ${element.prefix}${element.name}"/i>
+            <div>
+				<span>${element.name}</span>
+			</div>
+        </div>`;
 
-iconsArray.forEach((element) => {
-	console.log(`${element.name}`);
+	document.querySelector(".container").append(createDiv);
+
 });
 
 
 
-	const nextname = iconsArray.map((element,index,) => {
-		 const aaa = element.name;
-		 return aaa
-		});
 	
-
-console.log(nextname);
-document.querySelector("span").innerHTML = nextname[0]
-
-
 
 
 

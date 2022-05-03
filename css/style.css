@@ -15,23 +15,21 @@
 .header-btm {
     height: 60px;
     background-color: #29b1dd;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : white
 }
 
-main {
-    background-color: #dddddd;
-    
-}
 .container {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 10px;
-
+    flex-wrap: wrap;
+    height: calc(100vh - 130px);
+    background-color: #dddddd;
 }
 
 .box-container {
-    width: calc(100% / 5);
+    flex-basis: calc(100% / 5);
     padding-top: 20px;
     
 }
@@ -47,5 +45,5 @@ main {
     align-items: center;   
     width: 100;
     background-color: white;
-    color: blue;
+    text-align: center;
 }
